@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TicTacToe</string>
+    <string name="btnNewGame">New Game</string>
+    <string name="btnNewGameCPU">New Game vs CPU</string>
+</resources>
