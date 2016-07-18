@@ -2,4 +2,7 @@
     <string name="app_name">TicTacToe</string>
     <string name="btnNewGame">New Game</string>
     <string name="btnNewGameCPU">New Game vs CPU</string>
+    <string name="btnEasy">Easy</string>
+    <string name="btnNormal">Normal</string>
+    <string name="btnHard">Hard</string>
 </resources>
