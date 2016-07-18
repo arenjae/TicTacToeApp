@@ -20,12 +20,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btnNewGame"
-            android:id="@+id/button" />
+            android:id="@+id/btnNewGame" />
 
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/btnNewGameCPU"
-            android:id="@+id/button2" />
+            android:id="@+id/btnNewGameCPU" />
     </LinearLayout>
 </RelativeLayout>
