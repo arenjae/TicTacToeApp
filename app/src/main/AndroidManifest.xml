@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".GameScreen" />
-        <activity android:name=".DifficultySelectionScreen"></activity>
+        <activity android:name=".DifficultySelectionScreen"/>
     </application>
 
 </manifest>
