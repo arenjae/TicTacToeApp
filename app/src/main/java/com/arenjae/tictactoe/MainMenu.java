@@ -19,20 +19,14 @@ public class MainMenu extends AppCompatActivity {
         btnNewGame = (Button)findViewById(R.id.btnNewGame);
         btnNewGameCPU = (Button)findViewById(R.id.btnNewGameCPU);
 
-        btnNewGame.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),GameScreen.class);
-                startActivity(i);
-            }
+        btnNewGame.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),GameScreen.class);
+            startActivity(i);
         });
 
-        btnNewGameCPU.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),DifficultySelectionScreen.class);
-                startActivity(i);
-            }
+        btnNewGameCPU.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),DifficultySelectionScreen.class);
+            startActivity(i);
         });
     }
 

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.arenjae.tictactoe.gameplay.TicTacToe;
 import com.arenjae.tictactoe.gameplay.TicTacToeAIEasy;
@@ -18,7 +19,7 @@ public class GameScreen extends AppCompatActivity {
     protected Button btnML, btnMM, btnMR;
     protected Button btnBL, btnBM, btnBR;
     protected TicTacToe game;
-    protected Text lblStatus;
+    protected TextView lblStatus;
 
     protected int aiOption = 0;
 
