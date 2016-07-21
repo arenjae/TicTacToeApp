@@ -1,10 +1,12 @@
-package com.arenjae.tictactoe.gameplay;
-import java.util.Random;
-
 /**
- * Created by earthshine0 on 7/21/2016.
+ * Created by Rachael Johnson on 7/21/2016.
+ * Copyright (c) 2016 Rachael Johnson
+ * This code is available under the "MIT License".
+ * Please see the file LICENSE in this distribution for license terms.
  */
 
+package com.arenjae.tictactoe.gameplay;
+import java.util.Random;
 
 public class TicTacToeAINormal extends TicTacToeAI{
 
