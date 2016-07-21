@@ -6,6 +6,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.arenjae.tictactoe.gameplay.TicTacToe;
+import com.arenjae.tictactoe.gameplay.TicTacToeAIEasy;
+import com.arenjae.tictactoe.gameplay.TicTacToeAIHard;
+import com.arenjae.tictactoe.gameplay.TicTacToeAINormal;
 
 import org.w3c.dom.Text;
 
