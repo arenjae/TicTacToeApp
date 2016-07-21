@@ -1,3 +1,10 @@
+/**
+ * Created by Rachael Johnson on 7/21/2016.
+ * Copyright (c) 2016 Rachael Johnson
+ * This code is available under the "MIT License".
+ * Please see the file LICENSE in this distribution for license terms.
+ */
+
 package com.arenjae.tictactoe;
 
 import android.content.Intent;
@@ -5,6 +12,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
 
 public class DifficultySelectionScreen extends AppCompatActivity {
 
@@ -21,12 +29,19 @@ public class DifficultySelectionScreen extends AppCompatActivity {
         btnNormal = (Button)findViewById(R.id.btnNormal);
         btnHard = (Button)findViewById(R.id.btnHard);
 
-        btnEasy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(getApplicationContext(),GameScreen.class);
-                startActivity(i);
-            }
+        btnEasy.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),GameScreen.class);
+            startActivity(i);
+        });
+
+        btnNormal.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),GameScreen.class);
+            startActivity(i);
+        });
+
+        btnHard.setOnClickListener(view -> {
+            Intent i = new Intent(getApplicationContext(),GameScreen.class);
+            startActivity(i);
         });
 
     }

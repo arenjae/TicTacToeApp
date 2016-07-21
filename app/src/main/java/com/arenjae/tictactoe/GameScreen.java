@@ -21,7 +21,7 @@ public class GameScreen extends AppCompatActivity {
     protected TicTacToe game;
     protected TextView lblStatus;
 
-    protected int aiOption = 0;
+    public int aiOption = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,8 +37,6 @@ public class GameScreen extends AppCompatActivity {
         btnBL = (Button)findViewById(R.id.btnBL);
         btnBM = (Button)findViewById(R.id.btnBM);
         btnBR = (Button)findViewById(R.id.btnBR);
-
-        //TicTacToe game;
 
         if (aiOption==0){
             game = new TicTacToe();
@@ -73,7 +71,7 @@ public class GameScreen extends AppCompatActivity {
 
     }
 
-    protected void createOverlay(String strMessage){
+    public void createOverlay(String strMessage){
 //
 //        //Creates buttons, label, original scene, and original window for overlay
 //        Button btnMainMenu = new Button("Main Menu");
@@ -131,10 +129,10 @@ public class GameScreen extends AppCompatActivity {
 //        });
     }
 
-    protected void resetButtons() {
+    public void resetButtons() {
 
         String blank = "";
-        lblStatus.setText(blank);
+        //lblStatus.setText(blank);
         btnTL.setText(blank);
         btnTM.setText(blank);
         btnTR.setText(blank);
@@ -158,8 +156,8 @@ public class GameScreen extends AppCompatActivity {
         else if (i == 2 && j==2) btnBR.setText(text);
     }
 
-    public void setLblText(String text){lblStatus.setText(text);}
-
+    public void setLblText(String text) {//lblStatus.setText(text);}
+    }
 
     public void setAiOption(int x){aiOption=x;}
 
