@@ -8,16 +8,12 @@ package com.arenjae.tictactoe;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import com.arenjae.tictactoe.gameplay.TicTacToe;
 import com.arenjae.tictactoe.gameplay.TicTacToeAIEasy;
 import com.arenjae.tictactoe.gameplay.TicTacToeAIHard;
 import com.arenjae.tictactoe.gameplay.TicTacToeAINormal;
-
-import org.w3c.dom.Text;
 
 public class GameScreen extends AppCompatActivity {
 
@@ -27,7 +23,7 @@ public class GameScreen extends AppCompatActivity {
     protected TicTacToe game;
     protected TextView lblStatus;
 
-    public int aiOption = 0;
+    private int aiOption = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,23 +58,14 @@ public class GameScreen extends AppCompatActivity {
         game.resetBoard();
 
         btnTL.setOnClickListener(event -> game.genericBtnClick(0, 0));
-
         btnTM.setOnClickListener(event -> game.genericBtnClick(1, 0));
-
         btnTR.setOnClickListener(event -> game.genericBtnClick(2, 0));
-
         btnML.setOnClickListener(event -> game.genericBtnClick(0, 1));
-
         btnMM.setOnClickListener(event -> game.genericBtnClick(1, 1));
-
         btnMR.setOnClickListener(event -> game.genericBtnClick(2, 1));
-
         btnBL.setOnClickListener(event -> game.genericBtnClick(0, 2));
-
         btnBM.setOnClickListener(event -> game.genericBtnClick(1, 2));
-
         btnBR.setOnClickListener(event -> game.genericBtnClick(2, 2));
-
     }
 
     public void createOverlay(String strMessage){
