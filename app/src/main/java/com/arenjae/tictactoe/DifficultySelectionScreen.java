@@ -29,23 +29,15 @@ public class DifficultySelectionScreen extends AppCompatActivity {
         btnNormal = (Button)findViewById(R.id.btnNormal);
         btnHard = (Button)findViewById(R.id.btnHard);
 
-        btnEasy.setOnClickListener(view -> {
-            Intent i = new Intent(getApplicationContext(),GameScreen.class);
-            startActivity(i);
-        });
-
-        btnNormal.setOnClickListener(view -> {
-            Intent i = new Intent(getApplicationContext(),GameScreen.class);
-            startActivity(i);
-        });
-
-        btnHard.setOnClickListener(view -> {
-            Intent i = new Intent(getApplicationContext(),GameScreen.class);
-            startActivity(i);
-        });
-
+        btnEasy.setOnClickListener(e -> activityStart(1));
+        btnNormal.setOnClickListener(e -> activityStart(2));
+        btnHard.setOnClickListener(e-> activityStart(3));
     }
 
-
+    void activityStart(int option){
+        Intent i = new Intent(getApplicationContext(),GameScreen.class);
+        i.putExtra("option",option);
+        startActivity(i);
+    }
 
 }
