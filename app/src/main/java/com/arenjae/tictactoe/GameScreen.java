@@ -34,6 +34,10 @@ public class GameScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_screen);
 
+        Bundle bundle=getIntent().getExtras();
+        aiOption=bundle.getInt("option");
+
+
         btnTL = (Button)findViewById(R.id.btnTL);
         btnTM = (Button)findViewById(R.id.btnTM);
         btnTR = (Button)findViewById(R.id.btnTR);

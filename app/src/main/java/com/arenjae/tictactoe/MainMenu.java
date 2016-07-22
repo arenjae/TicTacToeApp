@@ -27,6 +27,7 @@ public class MainMenu extends AppCompatActivity {
 
         btnNewGame.setOnClickListener(view -> {
             Intent i = new Intent(getApplicationContext(),GameScreen.class);
+            i.putExtra("option",0);
             startActivity(i);
         });
 
