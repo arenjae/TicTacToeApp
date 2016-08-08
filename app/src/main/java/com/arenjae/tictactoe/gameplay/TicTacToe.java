@@ -15,6 +15,7 @@ public class TicTacToe{
     protected int player = 1;
     protected final String p1 = "X";
     protected final String p2 = "O";
+    protected int [] score = {0,0};
     protected GameScreen controller;
 
     public TicTacToe() {
@@ -61,9 +62,11 @@ public class TicTacToe{
     protected void checkBoard(){
         if (checkBoardDirections(board)){
             showOverlay("Player " + player + " has won!");
+            setScore(1);
             resetBoard();
         } else if (checkFullBoard()){
             showOverlay("Tie Game");
+            setScore(2);
             resetBoard();
         }
 
@@ -94,7 +97,6 @@ public class TicTacToe{
                 board[x][y]=0;
             }
         }
-
         controller.resetButtons();
         controller.setLblText("Player " + player + "'s move");
     }
@@ -126,5 +128,16 @@ public class TicTacToe{
         return false;
     }
 
+    protected void setScore(int choice){
+        if (choice==1){ //A single player won
+            score[player]+=1;
+        }else{  //players tied
+            score[0]+=1;
+            score[1]+=1;
+        }
+
+        controller.setTxtPlayerScore(score[0]);
+        controller.setTxtCPUScore(score[1]);
+    }
 
 }

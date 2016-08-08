@@ -20,6 +20,7 @@ public class GameScreen extends AppCompatActivity {
     protected Button btnTL, btnTM, btnTR;
     protected Button btnML, btnMM, btnMR;
     protected Button btnBL, btnBM, btnBR;
+    protected TextView txtPlayerScore, txtCPUScore;
     protected TicTacToe game;
     protected TextView lblStatus;
 
@@ -43,6 +44,9 @@ public class GameScreen extends AppCompatActivity {
         btnBL = (Button)findViewById(R.id.btnBL);
         btnBM = (Button)findViewById(R.id.btnBM);
         btnBR = (Button)findViewById(R.id.btnBR);
+        txtPlayerScore = (TextView)findViewById(R.id.txtPlayerScore);
+        txtCPUScore = (TextView)findViewById(R.id.txtCPUScore);
+
 
         if (aiOption==0){
             game = new TicTacToe();
@@ -156,6 +160,12 @@ public class GameScreen extends AppCompatActivity {
     public void setLblText(String text) {//lblStatus.setText(text);}
     }
 
+    public void setTxtPlayerScore(int score){
+        txtPlayerScore.setText(score);
+    }
+    public void setTxtCPUScore(int score){
+        txtCPUScore.setText(score);
+    }
     public void setAiOption(int x){aiOption=x;}
 
     public int getAiOption(){return aiOption;}
