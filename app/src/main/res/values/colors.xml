@@ -5,4 +5,5 @@
     <color name="colorAccent">#FF4081</color>
     <color name="black">#32000000</color>
     <color name="statusBar">#32000000</color>
+    <color name="banner">#575757</color>
 </resources>

@@ -21,6 +21,32 @@
         android:layout_centerInParent="true"
         android:gravity="center|center_horizontal">
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.26"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Player:"
+                android:id="@+id/textView2"
+                android:layout_weight="0.44" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="CPU:"
+                android:id="@+id/textView3"
+                android:textAlignment="gravity"
+                android:layout_weight="0.49"
+                android:gravity="right" />
+        </LinearLayout>
+
         <TableLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

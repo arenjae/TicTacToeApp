@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~ * Created by Rachael Johnson on 7/21/2016.
+  ~ * Copyright (c) 2016 Rachael Johnson
+  ~ * This code is available under the "MIT License".
+  ~ * Please see the file LICENSE in this distribution for license terms.
+  ~ */
+  -->
+
+<resources>
+    <color name="background_material_dark">#7e303030</color>
+</resources>
