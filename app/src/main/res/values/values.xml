@@ -10,6 +10,4 @@
 
 <resources>
     <color name="background_material_dark">#7e303030</color>
-    <string name="playerScore">0</string>
-    <string name="cpuScore">0</string>
 </resources>
