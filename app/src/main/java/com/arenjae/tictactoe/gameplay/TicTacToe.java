@@ -42,15 +42,6 @@ public class TicTacToe{
 
 
     protected void switchPlayer(){
-//        switch (player){
-//            case 1:
-//                player = 2;
-//                break;
-//            case 2:
-//                player = 1;
-//                break;
-//        }
-
         /*fancy switch
         * 0010
         *  ^11
