@@ -160,6 +160,10 @@ public class GameScreen extends AppCompatActivity {
     public void setLblText(String text) {//lblStatus.setText(text);}
     }
 
+    public void setBanner(String text){
+
+    }
+
     public void setTxtPlayerScore(int score){
         txtPlayerScore.setText(String.valueOf(score));
     }

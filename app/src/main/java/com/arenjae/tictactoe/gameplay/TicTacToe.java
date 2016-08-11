@@ -42,14 +42,23 @@ public class TicTacToe{
 
 
     protected void switchPlayer(){
-        switch (player){
-            case 1:
-                player = 2;
-                break;
-            case 2:
-                player = 1;
-                break;
-        }
+//        switch (player){
+//            case 1:
+//                player = 2;
+//                break;
+//            case 2:
+//                player = 1;
+//                break;
+//        }
+
+        /*fancy switch
+        * 0010
+        *  ^11
+        * -----
+        * 0001
+        */
+
+        player = player^3;
 
         controller.setLblText("Player " + player + "'s turn");
     }
