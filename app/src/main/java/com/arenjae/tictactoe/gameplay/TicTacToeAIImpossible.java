@@ -28,13 +28,15 @@ public class TicTacToeAIImpossible extends TicTacToeAI {
 
         //now we have a copy of the gameboard
         stupidArrayCopy(board,testBoardAI);
-
+        int testPlayer=0;
+        if (player == 2) testPlayer=1;
+        else testPlayer=-1;
 
         for (int i=0;i<3;i++){
             for (int j=0;i<3;j++){
                 if (testBoardAI[i][j]!=0) break; //space is already occupied
-                testBoardAI[i][j]=player;
-                int tempScore = -minimax(testBoard,player);
+                testBoardAI[i][j]=testPlayer;
+                int tempScore = -minimax(testBoardAI,testPlayer);
                 testBoardAI[i][j]=0;
                 if (tempScore>score){
                     moveX=i;
@@ -54,7 +56,7 @@ public class TicTacToeAIImpossible extends TicTacToeAI {
             for (int j=0;i<3;j++){
                 if (testBoardAI[i][j]!=0) break; //space is already occupied
                 testBoardAI[i][j]=player;
-                int thisScore = -minimax(testBoard,player*(-1));
+                int thisScore = -minimax(testBoardAI,player*(-1));
                 if (thisScore>score){
                     score=thisScore;
                     x=i;
