@@ -130,7 +130,7 @@ public class TicTacToe{
 
     protected void setScore(int choice){
         if (choice==1){ //A single player won
-            score[player]+=1;
+            score[player-1]+=1;
         }else{  //players tied
             score[0]+=1;
             score[1]+=1;

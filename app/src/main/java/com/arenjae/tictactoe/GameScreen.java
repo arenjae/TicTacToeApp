@@ -161,7 +161,7 @@ public class GameScreen extends AppCompatActivity {
     }
 
     public void setTxtPlayerScore(int score){
-        //txtPlayerScore.setText(score);
+        txtPlayerScore.setText(score);
     }
     public void setTxtCPUScore(int score){
        // txtCPUScore.setText(score);
