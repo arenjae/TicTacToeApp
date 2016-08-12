@@ -9,7 +9,7 @@
 package com.arenjae.tictactoe.gameplay;
 
 public class TicTacToeAIImpossible extends TicTacToeAI {
-    protected int testBoardAI[][];
+    protected int testBoardAI[][] = new int[3][3];
 
     public TicTacToeAIImpossible() {
     }
@@ -28,12 +28,12 @@ public class TicTacToeAIImpossible extends TicTacToeAI {
 
         //now we have a copy of the gameboard
         stupidArrayCopy(board,testBoardAI);
-        int testPlayer=0;
+        int testPlayer;
         if (player == 2) testPlayer=1;
         else testPlayer=-1;
 
         for (int i=0;i<3;i++){
-            for (int j=0;i<3;j++){
+            for (int j=0;j<3;j++){
                 if (testBoardAI[i][j]!=0) break; //space is already occupied
                 testBoardAI[i][j]=testPlayer;
                 int tempScore = -minimax(testBoardAI,testPlayer);
@@ -53,7 +53,7 @@ public class TicTacToeAIImpossible extends TicTacToeAI {
         int score=-2;
 
         for (int i=0;i<3;i++){
-            for (int j=0;i<3;j++){
+            for (int j=0;j<3;j++){
                 if (testBoardAI[i][j]!=0) break; //space is already occupied
                 testBoardAI[i][j]=player;
                 int thisScore = -minimax(testBoardAI,player*(-1));

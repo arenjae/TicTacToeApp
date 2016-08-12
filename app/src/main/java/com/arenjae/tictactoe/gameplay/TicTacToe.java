@@ -132,8 +132,8 @@ public class TicTacToe{
         if (choice==1){ //A single player won
             score[player-1]+=1;
         }else{  //players tied
-            score[0]+=1;
-            score[1]+=1;
+//            score[0]+=1;
+//            score[1]+=1;
         }
 
         controller.setTxtPlayerScore(score[0]);
