@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.arenjae.tictactoe.gameplay.TicTacToe;
 import com.arenjae.tictactoe.gameplay.TicTacToeAIEasy;
 import com.arenjae.tictactoe.gameplay.TicTacToeAIHard;
+import com.arenjae.tictactoe.gameplay.TicTacToeAIImpossible;
 import com.arenjae.tictactoe.gameplay.TicTacToeAINormal;
 
 public class GameScreen extends AppCompatActivity {
@@ -54,9 +55,10 @@ public class GameScreen extends AppCompatActivity {
             game = new TicTacToeAIEasy();
         }else if(aiOption==2) {
             game = new TicTacToeAINormal();
-        }else{ //aiOption==3
+        }else if (aiOption==3){ //aiOption==3
             game = new TicTacToeAIHard();
-        }
+        }else //aiOption==4
+            game = new TicTacToeAIImpossible();
 
         game.setController(this);
         game.resetBoard();
