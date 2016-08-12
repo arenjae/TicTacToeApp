@@ -7,7 +7,7 @@ Link To Website: http://arenjae.com/TicTacToe/
 
 ### Table of Contents
  - [Idea](##Idea)
- - [Build](#build)
+ - [Build](##build)
  - [Usage](#usage)
  - [Contributing](#contributing)
  - [License](##license)
@@ -29,6 +29,15 @@ In Progess:
 Currently I am working on adding a neural network to play against the player/cpu.
 I will be using a library initially, and then once I have a working prototype, I will
 write my own neural network.
+
+
+##Build
+This app uses android sdk 23 as the minimum build. 
+To build this app using Android Studio, start a new project, and add the files from 
+```
+app/src/main/java/com/arenjae/tictactoe
+```
+
 
 ##License
 #####Copyright (c) 2016 Rachael Johnson
