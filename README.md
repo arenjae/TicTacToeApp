@@ -40,7 +40,7 @@ There are 4 difficulty settings for Player vs CPU:
  
 Impossible uses the minimax algorithm to compute the tree of perfect moves. 
 
-
+![alt tag](./Screenshot_20160812-184932.png)
 
 ##Build
 This app uses android sdk 23 as the minimum build. Please ensure that the android SDK is properly installed.
