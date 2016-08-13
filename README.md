@@ -7,11 +7,11 @@ Link To Website: http://arenjae.com/TicTacToe/
 ---
 
 ### Table of Contents
- - [Idea](##Idea)
- - [Build](##build)
+ - [Idea](#Idea)
  - [Usage](#usage)
+ - [Build](#build)
  - [Contributing](#contributing)
- - [License](##license)
+ - [License](#license)
  
 ---
 
