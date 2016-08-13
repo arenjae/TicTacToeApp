@@ -1,6 +1,6 @@
 # TicTacToe Android App
-Copyright (c) 2016 Rachael Johnson
 ---
+Copyright (c) 2016 Rachael Johnson
 Clean Tic Tac Toe Android App Utilizing a Neural Network
 
 Link To Website: http://arenjae.com/TicTacToe/
