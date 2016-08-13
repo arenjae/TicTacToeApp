@@ -1,4 +1,7 @@
 # TicTacToe Android App
+---
+Copyright (c) 2016 Rachael Johnson
+
 Clean Tic Tac Toe Android App Utilizing a Neural Network
 
 Link To Website: http://arenjae.com/TicTacToe/
@@ -6,11 +9,11 @@ Link To Website: http://arenjae.com/TicTacToe/
 ---
 
 ### Table of Contents
- - [Idea](##Idea)
- - [Build](##build)
+ - [Idea](#Idea)
  - [Usage](#usage)
+ - [Build](#build)
  - [Contributing](#contributing)
- - [License](##license)
+ - [License](#license)
  
 ---
 
@@ -40,7 +43,9 @@ There are 4 difficulty settings for Player vs CPU:
  
 Impossible uses the minimax algorithm to compute the tree of perfect moves. 
 
-![alt tag](./Screenshot_20160812-184932.png)
+![alt tag](./screenshots/Screenshot_20160812-190156.png)
+![alt tag](./screenshots/Screenshot_20160812-184935.png)
+![alt tag](./screenshots/Screenshot_20160812-185001.png)
 
 ##Build
 This app uses android sdk 23 as the minimum build. Please ensure that the android SDK is properly installed.
