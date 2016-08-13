@@ -7,7 +7,7 @@ Clean Tic Tac Toe Android App Utilizing a Neural Network
 Link To Website: http://arenjae.com/TicTacToe/
 
 To Play - download the apk found in the apk folder. 
-![alt tag][./apk/TicTacToe.apk]
+[Tic Tac Toe App](./apk/TicTacToe.apk)
 Enable installation of apps from Unkown Sources in your android device settings.
 Install the apk and enjoy!
 
