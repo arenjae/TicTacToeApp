@@ -45,6 +45,7 @@ public class TicTacToeAIImpossible extends TicTacToeAI {
             }
         }
     }
+
     private int minimax(int [][] testBoardAI, int player){
         boolean winner=checkBoardDirections(testBoardAI);
         if (winner) return 10*(player);
